@@ -1,0 +1,136 @@
+/* === Global Theme === */
+body {
+    background: #111; /* Dark background */
+    color: #FFD700;   /* Gold text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container */
+.container {
+    background: #1a1a1a;
+    border-radius: 18px;
+    padding: 1rem;
+}
+
+/* Heading */
+h2 {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+/* === Chat Card === */
+#chat-card {
+    margin-bottom: 1rem;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(255, 215, 0, 0.2);
+    background: #000; /* Black */
+}
+
+/* Chat messages area */
+#chat-messages {
+    max-height: 70vh;
+    min-height: 40vh;
+    overflow-y: auto;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    background: #111; /* Slightly lighter black */
+    border-radius: 18px 18px 0 0;
+    color: #FFD700;
+}
+
+/* === Chat Bubbles === */
+.chat-bubble {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 18px;
+    margin-bottom: 6px;
+    max-width: 80%;
+    word-break: break-word;
+    font-size: 1rem;
+}
+
+/* User messages */
+.chat-bubble.user {
+    background: #FFD700;
+    color: #000;
+    margin-left: 20%;
+    text-align: right;
+    font-weight: 500;
+}
+
+/* Bot messages */
+.chat-bubble.bot {
+    background: #222;
+    color: #FFD700;
+    margin-right: 20%;
+    text-align: left;
+    border: 1px solid #FFD700;
+}
+
+/* Meta text */
+.chat-meta {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin-bottom: 2px;
+}
+
+/* === Chat Form === */
+#chat-form {
+    background: #000;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 -1px 8px rgba(255, 215, 0, 0.15);
+    padding: 0.5rem;
+}
+
+/* Input field */
+#chat-form input[type="text"] {
+    border-radius: 18px 0 0 18px;
+    font-size: 1.1rem;
+    border: 1px solid #FFD700;
+    background: #111;
+    color: #FFD700;
+}
+
+/* Input focus */
+#chat-form input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px #FFD700;
+    border-color: #FFD700;
+}
+
+/* Send button */
+#chat-form button {
+    border-radius: 0 18px 18px 0;
+    font-size: 1.1rem;
+    background: #FFD700;
+    color: #000;
+    border: none;
+    transition: 0.2s;
+}
+
+#chat-form button:hover {
+    background: #e6c200;
+}
+
+/* === Clear Button === */
+.btn-outline-danger {
+    border-color: #FFD700 !important;
+    color: #FFD700 !important;
+    background: transparent;
+}
+
+.btn-outline-danger:hover {
+    background: #ff0000 !important;
+    border-color: #ff0000 !important;
+    color: #000 !important;
+}
+
+/* Scrollbar styling */
+#chat-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+    background: #FFD700;
+    border-radius: 10px;
+}

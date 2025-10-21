@@ -1,0 +1,168 @@
+/* ===========================
+   GLOBAL THEME
+=========================== */
+body {
+    background: #000;                 /* Black background */
+    color: #FFD700;                   /* Default gold text */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-gold {
+    color: #FFD700 !important;
+}
+
+.schedule-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Schedule Wrapper Box */
+.schedule-wrapper {
+    background: #111;                  /* Slightly lighter black for contrast */
+    border-radius: 12px;
+    border: 2px solid rgba(255, 215, 0, 0.4); /* Gold glow border */
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+/* ===========================
+   TABLE STYLING
+=========================== */
+.table {
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    margin-bottom: 0;
+}
+
+.table-dark {
+    background-color: #000;
+}
+
+.table th, 
+.table td {
+    padding: 12px;
+    vertical-align: middle;
+    color: #FFD700;
+}
+
+.table-gold th {
+    background: #FFD700;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #111;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #181818;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 215, 0, 0.15);
+    transition: background 0.3s;
+}
+
+.text-muted {
+    color: rgba(255, 215, 0, 0.5) !important; /* Muted gold text */
+}
+
+/* ===========================
+   BUTTON STYLING
+=========================== */
+.btn {
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    border: none;
+}
+
+/* Join button - green with gold hover */
+.btn-success {
+    background-color: #008000;
+    color: #FFD700;
+}
+
+.btn-success:hover {
+    background-color: #00a000;
+    color: #fff;
+}
+
+/* Unjoin button - red with gold hover */
+.btn-danger {
+    background-color: #b30000;
+    color: #FFD700;
+}
+
+.btn-danger:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+/* Info button - cyan with gold hover */
+.btn-info {
+    background-color: #00bcd4;
+    color: #000;
+}
+
+.btn-info:hover {
+    background-color: #00e1ff;
+    color: #000;
+}
+
+/* Disabled button */
+.btn-secondary:disabled {
+    background-color: #333;
+    color: rgba(255, 215, 0, 0.6);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    cursor: not-allowed;
+}
+
+/* ===========================
+   COLLAPSIBLE MEMBER LIST
+=========================== */
+.card.card-body.p-2 {
+    background: #000;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #FFD700;
+}
+
+.card.card-body.p-2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card.card-body.p-2 ul li {
+    padding: 6px 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+    color: #FFD700;
+}
+
+.card.card-body.p-2 ul li:last-child {
+    border-bottom: none;
+}
+
+.card.card-body.p-2 ul li i {
+    color: #FFD700;
+    margin-right: 8px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+    .schedule-wrapper {
+        padding: 20px 10px;
+    }
+
+    table.table th,
+    table.table td {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+}

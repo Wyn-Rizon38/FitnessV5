@@ -1,0 +1,78 @@
+/* === Container & Page === */
+body {
+    background-color: #000;
+    /* Black background */
+    color: #FFD700;
+    /* Default gold text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    background: linear-gradient(90deg, #0a0a0a 0%, #000 50%);
+    border: 1px solid #FFD700;
+    color: #FFD700;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+/* === Workout Card === */
+.workout-card {
+    background-color: #000;
+    /* black background */
+    border: 1px solid #FFD700;
+    /* gold border */
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.2);
+}
+
+.workout-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    /* glowing gold hover */
+}
+
+/* === Card Image === */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #FFD700;
+}
+
+/* === Card Body === */
+.card-body {
+    text-align: center;
+    padding: 1rem;
+    background-color: #111;
+    /* softer black for contrast */
+    color: #FFD700;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #FFD700;
+    margin: 0;
+}
+
+/* === Remove link underline === */
+a.text-decoration-none {
+    text-decoration: none !important;
+}
+
+/* === Responsive tweak === */
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+}
