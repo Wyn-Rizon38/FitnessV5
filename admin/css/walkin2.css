@@ -1,0 +1,229 @@
+/* ====================================
+   GLOBAL STYLE
+==================================== */
+body {
+  background: #f7f7f7;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ====================================
+   SIDEBAR
+==================================== */
+.sidebar {
+  width: 250px;
+  background: #222;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 0 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar img {
+  width: 120px;
+  margin: 20px auto 10px;
+}
+
+.sidebar h2 {
+  color: #FFD700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background: rgba(255,215,0,0.15);
+  color: #FFD700;
+  padding-left: 25px;
+}
+
+.sidebar a.active {
+  background: #FFD700;
+  color: #222;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.sidebar .bottom-btns {
+  margin-top: auto;
+  padding: 15px;
+}
+
+.sidebar .admin-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #FFD700;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #222;
+  transition: all 0.3s;
+}
+
+.sidebar .admin-btn:hover {
+  background: #e6c200;
+}
+
+.sidebar .logout-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: #ff4d4d;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.sidebar .logout-btn:hover {
+  background: #e60000;
+}
+
+/* ====================================
+   CONTENT AREA
+==================================== */
+#content-wrapper {
+            margin-left: 220px;          
+            padding: 25px;
+            transition: margin-left 0.3s ease;
+            background: #fff;
+            min-height: 100vh;
+        }
+
+        /* Mobile: sidebar stacks on top */
+        @media (max-width: 991.98px) {
+            #content-wrapper {
+                margin-left: 0;
+                padding: 15px;
+            }
+        }
+
+h2, h3 {
+  color: #c09300;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* ====================================
+   FORM STYLING
+==================================== */
+form .form-control, 
+form .form-select {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+form .form-control:focus, 
+form .form-select:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 6px rgba(255,215,0,0.3);
+  outline: none;
+}
+
+.btn-primary {
+  background: #FFD700;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.btn-primary:hover {
+  background: #e6c200;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255,215,0,0.4);
+}
+
+/* ====================================
+   TABLE STYLING
+==================================== */
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.table thead {
+  background: #000000;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.table tbody tr {
+  transition: background 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background: rgba(255, 215, 0, 0.07);
+}
+
+.table th, .table td {
+  padding: 0.9rem 1rem;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  border: none;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.delete-btn:hover {
+  background: #e60000;
+  transform: scale(1.05);
+}
+
+/* ====================================
+   RESPONSIVE
+==================================== */
+@media(max-width:768px){
+  .sidebar{
+    width: 200px;
+  }
+  #content-wrapper{
+    margin-left: 200px;
+    padding: 15px;
+  }
+  h2, h3{
+    font-size: 1.3rem;
+  }
+}
+
+/* ====================================
+   ANIMATION
+==================================== */
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(10px);}
+  to {opacity:1; transform:translateY(0);}
+}

@@ -1,0 +1,176 @@
+/* ========== GLOBAL STYLES ========== */
+body {
+    background-color: #ffffff;
+    color: #2c2c2c;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* ========== CONTAINER ========== */
+.container {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 25px rgba(212, 175, 55, 0.15);
+    max-width: 900px;
+    margin: 50px auto;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 8px 35px rgba(212, 175, 55, 0.25);
+}
+
+/* ========== HEADINGS ========== */
+h2, h4 {
+    color: #b29600;
+    font-weight: 700;
+    border-bottom: 2px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* ========== FORM ========== */
+form {
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease-in-out;
+}
+
+form:hover {
+    background: #fff8e1;
+    border-color: #d4af37;
+}
+
+label {
+    font-weight: 600;
+    color: #444;
+}
+
+input[type="number"],
+input[type="date"],
+select {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 6px rgba(212, 175, 55, 0.4);
+    outline: none;
+}
+
+/* ========== BUTTONS ========== */
+.btn-primary {
+    background: #d4af37;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #b18e00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+.btn-secondary {
+    background: #fff;
+    color: #b18e00;
+    border: 2px solid #d4af37;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #d4af37;
+    color: #fff;
+}
+
+/* Delete button style */
+.btn-danger {
+    background: #fff;
+    color: #d9534f;
+    border: 2px solid #d9534f;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-danger:hover {
+    background: #d9534f;
+    color: #fff;
+}
+
+/* ========== TABLE ========== */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.table thead {
+    background: linear-gradient(90deg, #d4af37, #f5e79e);
+    color: #fff;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background: #fff8dc;
+    transform: scale(1.01);
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* ========== ALERTS ========== */
+.alert-success {
+    background: #fff9e6;
+    border-left: 6px solid #d4af37;
+    color: #5c4b00;
+    font-weight: 500;
+}
+
+.alert-danger {
+    background: #ffeaea;
+    border-left: 6px solid #d9534f;
+    color: #721c24;
+    font-weight: 500;
+}
+
+/* ========== RESPONSIVENESS ========== */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    h2, h4 {
+        font-size: 1.3rem;
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,156 @@
+/* ===== GLOBAL RESET ===== */
+body {
+  background-color: #ffffff;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.2);
+  max-width: 850px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 8px 35px rgba(212, 175, 55, 0.35);
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+  color: #b29500;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #d4af37;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+/* ===== FORM FIELDS ===== */
+label {
+  font-weight: 600;
+  color: #4b4b4b;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+  outline: none;
+  background-color: #fffef8;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  background-color: #d4af37;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+  background-color: #b18e00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+.btn-outline-primary {
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #d4af37;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+/* ===== ALERTS ===== */
+.alert-warning {
+  background-color: #fff9e6;
+  color: #6b5a00;
+  border-left: 5px solid #d4af37;
+  font-weight: 500;
+}
+
+.alert-success {
+  background-color: #fefaf0;
+  color: #5c4b00;
+  border-left: 5px solid #d4af37;
+  font-weight: 500;
+}
+
+/* ===== FORM CARD EFFECT ===== */
+form {
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  background-color: #fff8e1;
+  border-color: #d4af37;
+}
+
+/* ===== INPUT ROWS ===== */
+.row {
+  margin-bottom: 20px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px 15px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

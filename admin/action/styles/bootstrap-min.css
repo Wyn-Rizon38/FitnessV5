@@ -1,0 +1,231 @@
+/*! Custom Normalize & Print Styles v1.0 | MIT License */
+/* --- Normalize base styles --- */
+html {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: #f8f9fa;
+}
+body {
+  margin: 0;
+  background: #fff;
+  color: #212529;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden], template {
+  display: none;
+}
+a {
+  background-color: transparent;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:active, a:hover {
+  outline: 0;
+  color: #0056b3;
+  text-decoration: underline;
+}
+abbr[title] {
+  border-bottom: 1px dotted #6c757d;
+  cursor: help;
+}
+b, strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+  font-weight: 600;
+}
+mark {
+  color: #000;
+  background: #fff3cd;
+}
+small {
+  font-size: 80%;
+}
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -.5em;
+}
+sub {
+  bottom: -.25em;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  height: 0;
+  box-sizing: content-box;
+  border: 0;
+  border-top: 1px solid #dee2e6;
+  margin: 1rem 0;
+}
+pre {
+  overflow: auto;
+  background: #f8f9fa;
+  padding: 1em;
+  border-radius: 4px;
+}
+code, kbd, pre, samp {
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1em;
+}
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+button {
+  overflow: visible;
+}
+button, select {
+  text-transform: none;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled], html input[disabled] {
+  cursor: default;
+  opacity: 0.65;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+input {
+  line-height: normal;
+}
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type=search] {
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  padding: .35em .625em .75em;
+  margin: 0 2px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+legend {
+  padding: 0 5px;
+  border: 0;
+  font-weight: 500;
+}
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  padding: .5em;
+  border: 1px solid #dee2e6;
+}
+th {
+  background: #f1f3f5;
+  font-weight: 600;
+}
+/* --- Print styles --- */
+@media print {
+  *, :after, :before {
+    color: #000 !important;
+    text-shadow: none !important;
+    background: 0 0 !important;
+    box-shadow: none !important;
+  }
+  a, a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+  blockquote, pre {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  img, tr {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  h2, h3, p {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+  .navbar {
+    display: none;
+  }
+  .btn > .caret, .dropup > .btn > .caret {
+    border-top-color: #000 !important;
+  }
+  .label {
+    border: 1px solid #000;
+  }
+  .table {
+    border-collapse: collapse !important;
+  }
+  .table td, .table th {
+    background-color: #fff !important;
+  }
+  .table-bordered td, .table-bordered th {
+    border: 1px solid #ddd !important;
+  }
+}
+/* --- End custom normalize and print styles
